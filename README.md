@@ -1,7 +1,7 @@
 # PaletteFile
 A Sublime Text plugin to provide file/folder creating functionality from the Command Palette with a hierarchical or flattened view of the project directories.
 
-*Currently tested only on Windows, but will be testing on Linux very soon.*
+*Currently tested only on Windows and Linux.*
 
 *If you would be interested in testing it on OSX, that would be much appreciated, so feel free to get in touch.*
 
