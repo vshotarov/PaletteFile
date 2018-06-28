@@ -1,0 +1,15 @@
+{
+    // The name of the command for going UP in the hierarchy
+    "parent_directory_command": "..",
+
+    // The name of the command for selecting the current directory
+    // in the hierarchy.
+    "this_directory_command": "<here>",
+
+    // The message underneath the command for going UP in the hierarchy,
+    // if the parent directory is the top level folders.
+    "top_level_message": "Current top level folders",
+
+    // Folders to exclude from the flat list of directories
+    "flat_exclude_folders": [".git", "venv"]
+}

@@ -1,0 +1,18 @@
+[
+    {
+        "caption": "PaletteFile: New file in project (tree)",
+        "command": "new_file_in_project_tree"
+    },
+    {
+        "caption": "PaletteFile: New folder in project (tree)",
+        "command": "new_folder_in_project_tree"
+    },
+    {
+        "caption": "PaletteFile: New file in project (flat)",
+        "command": "new_file_in_project_flat"
+    },
+    {
+        "caption": "PaletteFile: New folder in project (flat)",
+        "command": "new_folder_in_project_flat"
+    },
+]
