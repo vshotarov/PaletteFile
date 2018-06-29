@@ -3,7 +3,7 @@ A Sublime Text plugin to provide file/folder creating functionality from the Com
 
 *Currently tested on Windows and Linux.*
 
-*If you would be interested in testing it on OSX, that would be much appreciated, so feel free to get in touch.*
+*If you would be interested in testing it on OSX, that would be much appreciated, so feel free to get in touch, but considering it is relying on basic `os.path` calls I am assuming it should work fine.*
 
 ![Sublime Text 3 PaletteFile demo - Creating files and folders from the Command Palette](https://user-images.githubusercontent.com/10420664/41960346-6cd7a250-79e7-11e8-8882-ba335bdd63b5.gif)
 
