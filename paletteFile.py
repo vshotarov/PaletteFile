@@ -38,32 +38,24 @@ def _create_path(name, pathType, chosen_directory, window):
     '''
     full_path = os.path.join(chosen_directory, name)
 
-    if os.path.exists(full_path):
+    try:
+        if pathType == "file":
+            with open(full_path, "x"):
+                pass
+            window.open_file(full_path)
+        else:
+            os.makedirs(full_path, exist_ok=False)
+
+        window.status_message("Created " + full_path)
+    except FileExistsError:
         sublime.error_message("%s %s already exists." % (
             pathType.capitalize(), full_path.capitalize()))
-
-    elif os.access(os.path.dirname(full_path), os.W_OK):
-        failed = 0
-        if pathType == "file":
-            try:
-                open(full_path, "a").close()
-                window.open_file(full_path)
-                window.status_message("Created " + full_path)
-            except OSError:
-                failed = 1
-        else:
-            try:
-                os.makedirs(full_path)
-                window.status_message("Created " + full_path)
-            except OSError:
-                failed = 1
-
-        if failed:
-            sublime.error_message("Cannot write to " + full_path + "." +
-                                  "The path may be invalid.")
-    else:
+    except PermissionError:
         sublime.error_message("Cannot write to " +
                               full_path + ". Check access permissions.")
+    except OSError:
+        sublime.error_message("Cannot write to " + full_path + "." +
+                              "The path may be invalid.")
 
 
 class _HierarchyTraverse():
