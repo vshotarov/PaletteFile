@@ -8,9 +8,9 @@ A Sublime Text plugin to provide file/folder creating functionality from the Com
 ![Sublime Text 3 PaletteFile demo - Creating files and folders from the Command Palette](https://user-images.githubusercontent.com/10420664/41960346-6cd7a250-79e7-11e8-8882-ba335bdd63b5.gif)
 
 ## Installation
-As it is still early days for this plugin, it is not yet added to the Package Control repo, but it will be very soon.
+The plugin is available on Package Control, so you can just fire up your command palette, go to *Install package* and type **PaletteFile**.
 
-In the meantime, you can get it by navigating to your [packages directory](http://docs.sublimetext.info/en/sublime-text-3/basic_concepts.html#the-data-directory) and cloning the repo
+If you want to install it manually, you can navigate to your [packages directory](http://docs.sublimetext.info/en/sublime-text-3/basic_concepts.html#the-data-directory) and clone the repo.
 
 ```git clone https://github.com/vshotarov/PaletteFile.git```
 
